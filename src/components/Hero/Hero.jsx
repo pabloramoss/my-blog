@@ -1,14 +1,24 @@
 import React from "react"
-import { Box, Flex, Heading, Link, Stack, Text, Image } from "@chakra-ui/react"
+import { Box, Flex, Heading, Link, Stack, Text } from "@chakra-ui/react"
 import config from "../../website-config"
-
+import Image from "next/image"
 
 const Hero = ()=> {
 
 	return(
-		<Box>
-			<Stack bg="gray.700" alignItems="center" color="gray.200" py={20}>
-				<Image borderRadius={5000} h="150px" w="150px" src="https://via.placeholder.com/150" />
+		<Box 
+			bgImage={config.coverImage}
+			objectFit='cover'
+			bgPosition="center"
+			bgRepeat="repeat">
+			<Stack 
+				alignItems="center" 
+				color="gray.200" 
+				py={20}>
+				<Image 
+					height={150} 
+					width={150} 
+					src={config.avatar}/>
 				<Heading>Pablo Ramos</Heading>
 				<Text>{config.description}</Text>
 			</Stack>
@@ -16,3 +26,4 @@ const Hero = ()=> {
 	)
 }
 export default Hero
+

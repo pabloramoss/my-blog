@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Flex, Heading, Link, Stack, Text, Image } from "@chakra-ui/react"
-import config from "../../../website-config"
+import config from "../../website-config"
 const Footer = ()=> {
 
 	return(

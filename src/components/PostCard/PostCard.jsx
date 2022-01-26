@@ -1,35 +1,38 @@
 import React from "react"
-import { Box, Flex, Heading, Link, Stack, Image, Grid, GridItem } from "@chakra-ui/react"
-import CardDescription from "./CardDescription"
+import { Link, Grid, GridItem } from "@chakra-ui/react"
+import HorizontalCard from "./HorizontalCard"
+import VerticalCard from "./VerticalCard"
 
-const PostCard = ()=> {
+const PostCard = ( {posts} )=> {
+	console.log("las props que llegan a PostCard son ",posts)
+	console.log(posts[0])
+	console.log(posts[0].frontmatter.title)
+	console.log(posts[1].frontmatter.title)
+	console.log(posts[2].frontmatter.title)
+	console.log(posts[3].frontmatter.title)
 
 	return(
 		<Grid 
 			templateRows="repeat(2, 1fr)"
 			templateColumns="repeat(3, 1fr)"
-			gap={4}
+			gap={8}
 			width="1000px"
 			p={10}
 		>
-			<GridItem colSpan={3} bg="gray.400" boxShadow="dark-lg">
-				<Flex>
-					<Image src="https://via.placeholder.com/600x400" />
-					<CardDescription />
-				</Flex>
+			<GridItem colSpan={3}>
+				<Link>
+					<HorizontalCard post={posts[0]} />
+				</Link>
 			</GridItem>
-			<GridItem bg="gray.400">
-				<Image src="https://via.placeholder.com/350x200" />
-				<CardDescription />
-			</GridItem>
-			<GridItem bg="gray.400">
-				<Image src="https://via.placeholder.com/350x200" />
-				<CardDescription />
-			</GridItem>
-			<GridItem bg="gray.400">
-				<Image src="https://via.placeholder.com/350x200" />
-				<CardDescription />
-			</GridItem>
+			<Link>
+				<VerticalCard post={posts[1]} />
+			</Link>
+			<Link>
+				<VerticalCard post={posts[2]}/>
+			</Link>
+			<Link>
+				<VerticalCard post={posts[3]} />
+			</Link>
 		</Grid>
 	)
 }

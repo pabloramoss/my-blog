@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Flex, Heading, Link, Stack, Spacer } from "@chakra-ui/react"
+import { Flex, Heading, Link, Stack } from "@chakra-ui/react"
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa"
 import config from "../../website-config"
 
@@ -9,7 +9,9 @@ const Navbar = ()=> {
 	return(
 		<Flex filter={{blur:"3"}} justifyContent="space-around" bg="black" py={3} color="gray.300" >
 			<Stack direction="row" alignItems="center" gap={5}>
-				<Heading fontSize="xl">PABLO</Heading>
+				<Link>
+					<Heading fontSize="xl">PABLO</Heading>
+				</Link>
 				<Link>Home</Link>
 			</Stack>
 			<Stack direction="row" alignItems="center" gap={5}>
