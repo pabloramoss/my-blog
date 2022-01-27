@@ -30,8 +30,8 @@ const PostCard = ( {posts} )=> {
 		</Grid> */
 		<div>
 			{posts.map((post, index) => 
-				<Link href={`/blog/${post.slug}`}>
-					<HorizontalCard key={index} post={post} />
+				<Link key={index} href={`/blog/${post.slug}`}>
+					<HorizontalCard post={post} />
 				</Link>)}
 		</div>
 	)

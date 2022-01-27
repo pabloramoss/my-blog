@@ -1,7 +1,8 @@
 module.exports = {
 	"env": {
 		"browser": true,
-		"es2021": true
+		"es2021": true,
+		"node": true
 	},
 	"extends": [
 		"eslint:recommended",
@@ -22,9 +23,11 @@ module.exports = {
 			"error",
 			"tab"
 		],
+		"react/prop-types": "off",
+		"react/react-in-jsx-scope": "off",
 		"linebreak-style": [
 			"error",
-			"unix"
+			"windows"
 		],
 		"quotes": [
 			"error",
