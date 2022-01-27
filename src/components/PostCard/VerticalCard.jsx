@@ -3,7 +3,6 @@ import { Stack } from "@chakra-ui/react"
 import CardDescription from "./CardDescription"
 import {motion} from "framer-motion"
 import Image from "next/image"
-import config from "../../website-config"
 const VerticalCard = ( {post} )=> {
 	const MotionStack = motion(Stack)
 

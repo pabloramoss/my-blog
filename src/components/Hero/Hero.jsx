@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Flex, Heading, Link, Stack, Text } from "@chakra-ui/react"
+import { Box, Heading, Stack, Text } from "@chakra-ui/react"
 import config from "../../website-config"
 import Image from "next/image"
 

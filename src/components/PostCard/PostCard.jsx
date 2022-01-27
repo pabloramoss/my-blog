@@ -1,18 +1,12 @@
 import React from "react"
-import { Link, Grid, GridItem } from "@chakra-ui/react"
+import { Link } from "@chakra-ui/react"
 import HorizontalCard from "./HorizontalCard"
-import VerticalCard from "./VerticalCard"
 
 const PostCard = ( {posts} )=> {
-	console.log("las props que llegan a PostCard son ",posts)
-	console.log(posts[0])
-	console.log(posts[0].frontmatter.title)
-	console.log(posts[1].frontmatter.title)
-	console.log(posts[2].frontmatter.title)
-	console.log(posts[3].frontmatter.title)
 
 	return(
-		<Grid 
+	//Formato a futuro (está hardcodeado, necesita un fix)
+	/* 		<Grid 
 			templateRows="repeat(2, 1fr)"
 			templateColumns="repeat(3, 1fr)"
 			gap={8}
@@ -33,7 +27,14 @@ const PostCard = ( {posts} )=> {
 			<Link>
 				<VerticalCard post={posts[3]} />
 			</Link>
-		</Grid>
+		</Grid> */
+		<div>
+			{posts.map((post, index) => 
+				<Link href={`/blog/${post.slug}`}>
+					<HorizontalCard key={index} post={post} />
+				</Link>)}
+		</div>
 	)
 }
 export default PostCard
+

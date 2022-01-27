@@ -23,8 +23,9 @@ export default function Home( {posts} ) {
 }
 
 //fetching data in built time
+//Se podría separar en un archivo getFiles y pasarle el directory como param pero me da error :-/
 export async function getStaticProps(){
-	const files = fs. readdirSync(path.join("posts"))	//get files from the posts directory
+	const files = fs.readdirSync(path.join("posts"))	//get files from the posts directory
 	const posts = files.map(filename =>{	//get slug and frontmatter from posts
 		const slug = filename.replace(".md", "")		//create slug
 		const markdownWithMeta = fs.readFileSync(path.join("posts", filename), "utf-8")		//get frontmatter
@@ -34,7 +35,6 @@ export async function getStaticProps(){
 			frontmatter,
 		}
 	})
-	console.log(posts)
 	return {
 		props: {
 			posts,

@@ -6,17 +6,17 @@ import Image from "next/image"
 
 const HorizontalCard = ( {post} ) => {
 	const MotionFlex = motion(Flex)
-	console.log("el post que llega a horizontalCard es ",post)
-	console.log("el titulo de cardDescription es ",post.frontmatter.title)
 
 	return(
 		<MotionFlex 
 			boxShadow="2xl"
-			height="100%"
+			height="300px"
 			whileHover={{ scale: 1.1 }}
 			whileTap={{ scale: 0.9 }}
+			my="30px"
 		>
-			<Image src={post.frontmatter.image} 
+			<Image 
+				src={post.frontmatter.image} 
 				height={350} 
 				width={600} 
 				objectFit="cover"

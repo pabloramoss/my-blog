@@ -4,11 +4,10 @@ const config = {
 	coverImage: "/images/BlogCover.jpg",
 	avatar: "/images/Avatar.png",
 	lang: "es",
-	siteUrl: "https://blogramos.vercel.app",
+	siteUrl: "https://pablog.vercel.app",
 	twitter: "https://twitter.com/rpablo_dev",
 	github: "https://github.com/pabloramoss",
 	linkedin: "https://www.linkedin.com",
-	showSubscribe: false,
 	
 }
 
