@@ -1,4 +1,7 @@
 module.exports = {
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
 	"env": {
 		"browser": true,
 		"es2021": true,
@@ -27,7 +30,7 @@ module.exports = {
 		"react/react-in-jsx-scope": "off",
 		"linebreak-style": [
 			"error",
-			"unix"
+			"windows"
 		],
 		"quotes": [
 			"error",
