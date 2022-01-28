@@ -1,6 +1,6 @@
 ---
 title: "Loving Next JS"
-publishedAt: "2020-03-11"
+date: "2020-03-11"
 summary: "Learn about this trending react based framework."
 image: "/images/nextjsBanner.jpg"
 subject: "nextjs"

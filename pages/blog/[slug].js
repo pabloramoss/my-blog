@@ -3,26 +3,41 @@ import path from "path"
 import matter from "gray-matter"
 import {marked} from "marked"
 import Link from "next/link"
+import { Heading, Stack, Button, Box } from "@chakra-ui/react"
 
 export default function PostPage({
-	frontmatter: { title, date, cover_image },
-	slug,
+	frontmatter: { title, cover_image },
 	content,
 }) {
 	return (
-		<>
+		<Stack 
+			alignItems="center" 
+			pt={100}
+			bg="gray.100"
+		>
 			<Link href='/'>
-				<a>Go Back</a>
+				<Button 
+					boxShadow="2xl"
+					bg="gray.200"
+				>Go Back</Button>
 			</Link>
-			<div>
-				<h1>{title}</h1>
-				<div>Posted on {date}</div>
-				<img src={cover_image} alt='' />
-				<div>
-					<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+			<Box 
+				maxW="900px"
+				boxShadow="2xl"
+				p={20}
+				bg="gray.200"
+				borderRadius={20}
+			>
+				<div className='card card-page'>
+					<Heading py={5}>{title}</Heading>
+					<img src={cover_image} alt='' />
+					<Stack justifyContent="center" className='post-body'>
+						<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+					</Stack>
 				</div>
-			</div>
-		</>
+
+			</Box>
+		</Stack>
 	)
 }
 
