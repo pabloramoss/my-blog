@@ -15,7 +15,7 @@ Gitflow is ideally suited for projects that have a scheduled release cycle and f
 
 <Image
   alt="gitflow-1"
-  src="/git/gitflow-1.svg"
+  src="/images/git/gitFlow1.svg"
   layout="responsive"
   width={550}
   height={250}
@@ -62,7 +62,7 @@ Each new feature should reside in its own branch, which can be **pushed to the c
 
 <Image
   alt="gitflow-2"
-  src="/git/gitflow-2.svg"
+  src="/images/git/gitFlow2.svg"
   layout="responsive"
   width={550}
   height={250}
@@ -110,7 +110,7 @@ git flow feature finish feature_branch
 
 <Image
   alt="gitflow-3"
-  src="/git/gitflow-3.svg"
+  src="/images/git/gitFlow3.svg"
   layout="responsive"
   width={550}
   height={250}
@@ -157,7 +157,7 @@ git flow release finish '0.1.0'
 
 <Image
   alt="gitflow-4"
-  src="/git/gitflow-4.svg"
+  src="/images/git/gitFlow4.svg"
   layout="responsive"
   width={550}
   height={250}

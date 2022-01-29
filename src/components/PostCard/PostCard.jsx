@@ -1,6 +1,7 @@
 import React from "react"
-import { Link } from "@chakra-ui/react"
+import { Link, Stack, Box } from "@chakra-ui/react"
 import HorizontalCard from "./HorizontalCard"
+import VerticalCard from "./VerticalCard"
 
 const PostCard = ( {posts} )=> {
 
@@ -28,12 +29,24 @@ const PostCard = ( {posts} )=> {
 				<VerticalCard post={posts[3]} />
 			</Link>
 		</Grid> */
-		<div>
+		<Box>
+			<Stack
+					display={{base:"none", md:"flex"}}
+			>
 			{posts.map((post, index) => 
 				<Link key={index} href={`/blog/${post.slug}`}>
 					<HorizontalCard post={post} />
 				</Link>)}
-		</div>
+		</Stack>
+		<Stack
+		display={{base:"flex", md:"none"}}
+		>
+			{posts.map((post, index) => 
+				<Link key={index} href={`/blog/${post.slug}`}>
+					<VerticalCard post={post} />
+				</Link>)}
+		</Stack>
+		</Box>
 	)
 }
 export default PostCard

@@ -3,40 +3,52 @@ import path from "path"
 import matter from "gray-matter"
 import {marked} from "marked"
 import Link from "next/link"
-import { Heading, Stack, Button, Box } from "@chakra-ui/react"
+import 
+{ 
+	Heading, 
+	Stack, 
+	Button, 
+	Box, 
+	Image,
+	Flex
+} from "@chakra-ui/react"
+import Navbar from "../../src/components/Navbar/Navbar"
+import Footer from "../../src/components/Footer/Footer"
 
 export default function PostPage({
-	frontmatter: { title, cover_image },
+	frontmatter: { title, image },
 	content,
 }) {
 	return (
-		<Stack 
-			alignItems="center" 
-			pt={100}
-			bg="gray.100"
-		>
-			<Link href='/'>
-				<Button 
-					boxShadow="2xl"
-					bg="gray.200"
-				>Go Back</Button>
-			</Link>
-			<Box 
-				maxW="900px"
-				boxShadow="2xl"
-				p={20}
-				bg="gray.200"
-				borderRadius={20}
+		<Stack>
+			<Navbar />
+			<Stack 
+				alignItems="center" 
+				pt={50}
 			>
-				<div className='card card-page'>
-					<Heading py={5}>{title}</Heading>
-					<img src={cover_image} alt='' />
-					<Stack justifyContent="center" className='post-body'>
-						<div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-					</Stack>
-				</div>
-
-			</Box>
+				<Link href='/'>
+					<Button 
+						boxShadow="2xl"
+						bg="gray.300"
+					>Volver</Button>
+				</Link>
+				<Box 
+					maxW="900px"
+					boxShadow="2xl"
+					p={20}
+					bg="gray.300"
+					borderRadius={20}
+				>
+					<div>
+						<Image src={image} />
+						<Heading py={5}>{title}</Heading>
+						<Stack className='post-body'>
+							<Box dangerouslySetInnerHTML={{ __html: marked(content) }}></Box>
+						</Stack>
+					</div>
+				</Box>
+			</Stack>
+			<Footer />
 		</Stack>
 	)
 }

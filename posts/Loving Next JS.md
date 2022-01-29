@@ -1,6 +1,6 @@
 ---
 title: "Loving Next JS"
-date: "2020-03-11"
+fecha: "2020-03-11"
 summary: "Learn about this trending react based framework."
 image: "/images/nextjsBanner.jpg"
 subject: "nextjs"

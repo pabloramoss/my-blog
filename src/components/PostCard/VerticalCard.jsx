@@ -11,8 +11,16 @@ const VerticalCard = ( {post} )=> {
 			boxShadow="2xl" 
 			whileHover={{ scale: 1.1 }}
 			whileTap={{ scale: 0.9 }}
+			my="30px"
+			height="400px"
+			mx={5}
 		>
-			<Image src={post.frontmatter.image} height={200} width={350} />
+			<Image 
+			src={post.frontmatter.image} 
+			height={200} 
+			width={350} 
+			objectFit="cover"
+			/>
 			<CardDescription post={post} />
 		</MotionStack>
 	)
