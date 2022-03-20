@@ -14,12 +14,12 @@ ol {
   border-radius: 3px;
 }
 .post-body pre {
-  background: #464646;
+  background: #011627;
   border-radius: 3px;
   padding: 20px;
   margin: 20px 0;
   color: white;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .post-body h1 {
