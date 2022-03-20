@@ -34,7 +34,7 @@ const PostCard = ( {posts} )=> {
 					display={{base:"none", md:"flex"}}
 			>
 			{posts.map((post, index) => 
-				<Link key={index} href={`/blog/${post.slug}`}>
+				<Link _hover={{textDecoration:"none"}} key={index} href={`/blog/${post.slug}`}>
 					<HorizontalCard post={post} />
 				</Link>)}
 		</Stack>
@@ -42,7 +42,7 @@ const PostCard = ( {posts} )=> {
 		display={{base:"flex", md:"none"}}
 		>
 			{posts.map((post, index) => 
-				<Link key={index} href={`/blog/${post.slug}`}>
+				<Link _hover={{textDecoration:"none"}} key={index} href={`/blog/${post.slug}`}>
 					<VerticalCard post={post} />
 				</Link>)}
 		</Stack>

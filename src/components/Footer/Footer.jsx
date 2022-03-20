@@ -16,7 +16,7 @@ const Footer = ()=> {
 			me={2}
 			>
 				<Text fontSize={10}>{config.title}</Text>
-				<Link href="/">Home</Link>
+				<Link _hover={{textDecoration:"none"}} href="/">Home</Link>
 			</Stack>
 			<Stack 
 			direction="row" 

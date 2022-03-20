@@ -1,0 +1,50 @@
+.post-body ul,
+ol {
+  line-height: 2.3;
+  margin: 10px 0;
+}
+.post-body a {
+  color: blue;
+  font-weight: 600;
+}
+.post-body span{
+  background-color: #b9b9b9;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 3px;
+}
+.post-body pre {
+  background: #464646;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 20px 0;
+  color: white;
+  overflow-x: scroll;
+}
+
+.post-body h1 {
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.post-body h2 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-top: 15px;
+
+}
+
+.post-body h3 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 15px;
+
+}
+.post-body p {
+  margin-top: 20px;
+}
+img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

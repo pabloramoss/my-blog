@@ -9,9 +9,7 @@ import
 	Stack, 
 	Button, 
 	Box, 
-	Image,
-	Flex
-} from "@chakra-ui/react"
+	Image} from "@chakra-ui/react"
 import Navbar from "../../src/components/Navbar/Navbar"
 import Footer from "../../src/components/Footer/Footer"
 
@@ -24,7 +22,7 @@ export default function PostPage({
 			<Navbar />
 			<Stack 
 				alignItems="center" 
-				pt={50}
+				py={50}
 			>
 				<Link href='/'>
 					<Button 
