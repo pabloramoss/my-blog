@@ -1,6 +1,7 @@
 import React from "react"
-import { Flex, Heading, Link, Stack } from "@chakra-ui/react"
+import { Flex, Heading, Stack } from "@chakra-ui/react"
 import SocialMediaIcons from "./SocialMediaIcons"
+import NextLink from "next/link"
 
 const Navbar = ()=> {
 
@@ -15,11 +16,10 @@ const Navbar = ()=> {
 				direction="row" 
 				alignItems="center" 
 				gap={5}>
-				<Link _hover={{textDecoration:"none"}} href="/">
-					<Heading 
-						fontSize="xl">PABLO</Heading>
-				</Link>
-				<Link _hover={{textDecoration:"none"}} href="/">Home</Link>
+				<NextLink _hover={{textDecoration:"none"}} href="/">
+					<Heading _hover={{cursor: "pointer"}} fontSize="xl">PABLO</Heading>
+				</NextLink>
+				<NextLink _hover={{textDecoration:"none"}} href="/">Home</NextLink>
 			</Stack>
 			<SocialMediaIcons />
 		</Flex>

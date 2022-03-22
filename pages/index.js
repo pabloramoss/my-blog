@@ -9,7 +9,6 @@ import PostCard from "../src/components/PostCard/PostCard"
 import Footer from "../src/components/Footer/Footer"
 
 export default function Home( {posts} ) {
-	console.log(posts)
 	return (
 		<Box bg="gray.300">
 			<Navbar />
