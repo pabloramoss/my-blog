@@ -9,26 +9,27 @@ import
 	Stack, 
 	Button, 
 	Box, 
+	Icon,
 	Image} from "@chakra-ui/react"
-import Navbar from "../../src/components/Navbar/Navbar"
-import Footer from "../../src/components/Footer/Footer"
+	import { FaChevronLeft } from "react-icons/fa"
 
 export default function PostPage({
 	frontmatter: { title, image },
 	content,
 }) {
 	return (
-		<Stack>
-			<Navbar />
+		<Stack spacing={0}>
 			<Stack 
 				alignItems="center" 
+				spacing={0}
 				py={50}
 			>
 				<Link href='/'>
 					<Button 
 						boxShadow="2xl"
 						bg="gray.300"
-					>Volver</Button>
+						mb={10}
+					><Icon as={FaChevronLeft} me={2}/>Volver</Button>
 				</Link>
 				<Box 
 					maxW="900px"
@@ -41,19 +42,17 @@ export default function PostPage({
 						<Image src={image} />
 						<Heading py={5}>{title}</Heading>
 						<Stack className='post-body'>
-							<Box dangerouslySetInnerHTML={{ __html: marked(content) }}></Box>
+							<Box dangerouslySetInnerHTML={{ __html: marked(content) }} />
 						</Stack>
 					</div>
 				</Box>
 			</Stack>
-			<Footer />
 		</Stack>
 	)
 }
 
 export async function getStaticPaths() {
 	const files = fs.readdirSync(path.join("posts"))
-
 	const paths = files.map((filename) => ({
 		params: {
 			slug: filename.replace(".md", ""),

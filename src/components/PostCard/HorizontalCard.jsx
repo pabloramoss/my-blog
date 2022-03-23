@@ -10,7 +10,7 @@ const HorizontalCard = ( {post} ) => {
 	return(
 		<MotionFlex 
 			boxShadow="2xl"
-			whileHover={{ scale: 1.1 }}
+			whileHover={{ scale: 1.05 }}
 			whileTap={{ scale: 0.9 }}
 			minH={200}
 			my="30px"

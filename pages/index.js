@@ -3,20 +3,16 @@ import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
 import { Box, Flex } from "@chakra-ui/react"
-import Navbar from "../src/components/Navbar/Navbar"
 import Hero from "../src/components/Hero/Hero"
 import PostCard from "../src/components/PostCard/PostCard"
-import Footer from "../src/components/Footer/Footer"
 
 export default function Home( {posts} ) {
 	return (
 		<Box bg="gray.300">
-			<Navbar />
 			<Hero />
 			<Flex justifyContent="center">
 				<PostCard posts={posts}/>
 			</Flex>
-			<Footer />
 		</Box>
 	)
 }
