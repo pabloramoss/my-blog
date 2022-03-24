@@ -7,11 +7,13 @@ import Hero from "../src/components/Hero/Hero"
 import PostCard from "../src/components/PostCard/PostCard"
 
 export default function Home( {posts} ) {
+	const postsArray = posts.reverse()
+
 	return (
 		<Box bg="gray.400">
 			<Hero />
 			<Flex justifyContent="center">
-				<PostCard posts={posts}/>
+				<PostCard posts={postsArray}/>
 			</Flex>
 		</Box>
 	)
