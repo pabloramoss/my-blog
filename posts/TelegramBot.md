@@ -1,10 +1,12 @@
 ---
 title: "Telegram bot"
-fecha: "2022-03-20"
+date: "2022-03-20"
 summary: "Guía para conectar tu applicación web con la api de Telegram para recibir notificaciones de forma automática en tu smartphone a través de un bot."
 image: "/images/telegramBotBanner.jpg"
 subject: "telegram"
 writtenBy: "Pablo Ramos"
+minRead: "5"
+tag: "telegram api"
 ---
 
 Haciendo un e-commerce me encontré con el asunto de cómo notificar al vendedor que realizó una venta, teniendo en cuenta que la idea de la app es que sea de costo cero. La aplicación en cuestión se encuentra deployada [aquí](https://ecommerce-pablo.vercel.app/) y cuenta con un carrito de compras y un checkout.

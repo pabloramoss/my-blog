@@ -8,7 +8,7 @@ import PostCard from "../src/components/PostCard/PostCard"
 
 export default function Home( {posts} ) {
 	return (
-		<Box bg="gray.300">
+		<Box bg="gray.400">
 			<Hero />
 			<Flex justifyContent="center">
 				<PostCard posts={posts}/>

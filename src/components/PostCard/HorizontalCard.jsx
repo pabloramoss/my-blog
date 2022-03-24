@@ -10,12 +10,15 @@ const HorizontalCard = ( {post} ) => {
 	return(
 		<MotionFlex 
 			boxShadow="2xl"
-			whileHover={{ scale: 1.05 }}
-			whileTap={{ scale: 0.9 }}
+			whileHover={{ scale: 1.02 }}
+			whileTap={{ scale: 0.97 }}
 			minH={200}
 			my="30px"
 			mx={5}
 			direction={{base: "column", md: "row"}}
+			rounded={10}
+			overflow="hidden"
+			bg="gray.300"
 		>
 			<Image 
 				src={post.frontmatter.image} 
