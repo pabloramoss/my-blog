@@ -34,14 +34,14 @@ export default function PostPage({
 				<Box 
 					maxW="900px"
 					boxShadow="2xl"
-					p={20}
+					p={{base: 5, md: 10}}
 					bg="gray.300"
 					borderRadius={20}
 				>
 					<div>
 						<Image src={image} />
 						<Heading py={5}>{title}</Heading>
-						<Stack className='post-body'>
+						<Stack className='post-body' maxW={{base:"320px", md:"auto"}}>
 							<Box dangerouslySetInnerHTML={{ __html: marked(content) }} />
 						</Stack>
 					</div>

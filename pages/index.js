@@ -7,13 +7,12 @@ import Hero from "../src/components/Hero/Hero"
 import PostCard from "../src/components/PostCard/PostCard"
 
 export default function Home( {posts} ) {
-	const postsArray = posts.reverse()
 
 	return (
 		<Box bg="gray.400">
 			<Hero />
 			<Flex justifyContent="center">
-				<PostCard posts={postsArray}/>
+				<PostCard posts={posts}/>
 			</Flex>
 		</Box>
 	)
@@ -32,9 +31,12 @@ export async function getStaticProps(){
 			frontmatter,
 		}
 	})
+	const sortOrder = (a, z) => {
+    return new Date(z.frontmatter.date) - new Date(a.frontmatter.date)
+  }
 	return {
 		props: {
-			posts,
+			posts: posts.sort(sortOrder),
 		}
 	}
 

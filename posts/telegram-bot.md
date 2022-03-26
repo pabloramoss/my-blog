@@ -1,6 +1,6 @@
 ---
 title: "Telegram bot"
-date: "2022-03-26"
+date: "2022/03/07"
 summary: "Guía para conectar tu applicación web con la api de Telegram para recibir notificaciones de forma automática en tu smartphone a través de un bot."
 image: "/images/telegramBotBanner.jpg"
 subject: "telegram"

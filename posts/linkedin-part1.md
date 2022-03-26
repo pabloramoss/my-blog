@@ -1,6 +1,6 @@
 ---
 title: "Optimiza tu Linkedin parte 1"
-date: "2022-03-20"
+date: "2022/03/22"
 summary: "Guía para optimizar tu perfil, incrementar tu engagement y aumentar las chances de conseguir una entrevista laboral"
 image: "/images/LoadingPost.jpg"
 subject: "telegram"
