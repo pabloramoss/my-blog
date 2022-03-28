@@ -5,7 +5,7 @@ summary: "Guía para conectar tu applicación web con la api de Telegram para re
 image: "/images/telegramBotBanner.jpg"
 subject: "telegram"
 writtenBy: "Pablo Ramos"
-minRead: "5"
+minRead: "8"
 tag: "telegram api"
 ---
 

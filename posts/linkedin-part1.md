@@ -5,7 +5,7 @@ summary: "Guía para optimizar tu perfil, incrementar tu engagement y aumentar l
 image: "/images/linkedinBanner.jpg"
 subject: "linkedin"
 writtenBy: "Pablo Ramos"
-minRead: "6"
+minRead: "4"
 tag: "linkedin"
 ---
 
