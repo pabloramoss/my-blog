@@ -52,3 +52,13 @@ img {
   background: rgba( 255, 255, 255, 0.05 );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+blockquote {
+  background-color: rgb(189, 189, 189);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+blockquote ul {
+  padding-left: 30px;
+}

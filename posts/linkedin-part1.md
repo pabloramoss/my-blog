@@ -20,7 +20,6 @@ Comenzamos:
 - La sección educación no es tan relevante como piensas. No te desanimes si no tienes un título como ingeniero en sistemas, lo que vale son tus conocimientos y los vas a demostrar con tus proyectos.
 - El about me debe ser conciso, sin mucho texto, dos o tres renglones y luego bullets con tu stack tech.
 
-
 > "Soy desallorador frontend jr. Me encuentro en busca de mi primer experiencia laboral, con muchas ganas de crecer profesionalmente y adquirir nuevos conocimientos."
 > 
 > Stack:
@@ -30,7 +29,6 @@ Comenzamos:
 > - Tailwind
 > - Nodejs
 > - Express
-
 
 - Si sabes inglés agrega la versión en inglés de tu Linkedin así les sirve a los recruiters que buscan también para posiciones en dicho idioma.
 - Colocar el país donde vivimos y no donde reside la empresa en la cual trabajamos (si estamos trabajando). Los recruiters filtran por lugar.
