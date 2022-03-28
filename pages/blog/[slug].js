@@ -41,7 +41,7 @@ export default function PostPage({
 					<div>
 						<Image src={image} />
 						<Heading py={5}>{title}</Heading>
-						<Stack className='post-body' maxW={{base:"320px", md:"auto"}}>
+						<Stack className='post-body' maxW={{base:"320px", sm: "500px", md:"750px"}}>
 							<Box dangerouslySetInnerHTML={{ __html: marked(content) }} />
 						</Stack>
 					</div>
