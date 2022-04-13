@@ -45,7 +45,7 @@ Comenzamos:
 > 
 > Analista Tester Jr.
 > 
-> Brindando servicio en el área de QA. Análisis de Casos de Uso. Confección de Casos de Prueba. Testeo manual de > Aplicaciones. Detección, reporte y seguimiento de bugs. Armado de ciclos de prueba. Uso de herramientas Serena, > Jira, ALM.
+> Brindando servicio en el área de QA. Análisis de Casos de Uso. Confección de Casos de Prueba. Testeo manual de > Aplicaciones. Detección, reporte y seguimiento de bugs. Armado de ciclos de prueba. Uso de herramientas Serena, Jira, ALM.
 > 
 > - Testing manual
 > - Creación de Casos de Pruebas. Herramienta: ALM HP Quality Center
