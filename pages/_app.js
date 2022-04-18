@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
 				{/* <link rel="icon" href="/favicon-32x32.png" /> */}
 			</Head>
 			<Script 
-				async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS}`} 
+				async src={`https://www.googletagmanager.com/gtag/js?id=G-SQ0YB2DNYL`} 
 				strategy="afterInteractive"
 			/>
 			<Script
@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
 				{`window.dataLayer = window.dataLayer || [];
 					function gtag(){dataLayer.push(arguments);}
 					gtag('js', new Date());
-					gtag('config', ${process.env.GOOGLE_ANALYTICS})`}
+					gtag('config', G-SQ0YB2DNYL)`}
 			</Script>
 			<ChakraProvider>
 				<Navbar />
