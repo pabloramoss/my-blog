@@ -2,7 +2,7 @@ const config = {
 	title: "IT blog by Pablo Ramos",
 	description: "Frontend Developer",
 	coverImage: "/images/BlogCover.jpg",
-	avatar: "/images/Avatar.png",
+	avatar: "/images/Avatar.jpg",
 	lang: "es",
 	siteUrl: "https://rpablog.vercel.app",
 	twitter: "https://twitter.com/rpablo_dev",

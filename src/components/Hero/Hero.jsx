@@ -16,9 +16,11 @@ const Hero = ()=> {
 				color="gray.200" 
 				py={20}>
 				<Image 
-					height={150} 
-					width={150} 
-					src={config.avatar}/>
+					height={240} 
+					width={240}
+					src={config.avatar}
+					style={{borderRadius: "99999px"}}
+				/>
 				<Heading>Pablo Ramos</Heading>
 				<Text>{config.description}</Text>
 			</Stack>
